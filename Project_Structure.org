@@ -1,0 +1,20 @@
+* Basic E-Commarce Website 
+(Shoping Cart)
+
+** home page 
+*** Navigation bar 
+**** login/Register option
+**** Catagory
+*** Search Bar
+**** Filter Options
+*** Product Display Section
+
+** login popup
+** My cart page
+** User Profile 
+** Product Details 
+** Catagory Clasification Page
+
+by now 
+virtual payment 
+
