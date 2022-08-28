@@ -2,19 +2,31 @@
 (Shoping Cart)
 
 ** home page 
-*** Navigation bar 
+*** Navigation bar
+**** Icon/Name
+**** Search Bar --> Search Result Page
+**** Cart --> My cart Page
+Show the user cart
+display estimated amount
 **** login/Register option
-**** Catagory
-*** Search Bar
-**** Filter Options
-*** Product Display Section
+After login
+***** Drop Down menu
+****** My Profile --> User Profile
+****** My order --> Order history
+****** Wish list
+****** Logut
+*** Catagory Section
+Catagori list
 
+*** Product Display Section
+*** Footer
+** Done
+** Search result page
+*** Responsive filter option on left
+*** Product List
 ** login popup
+** Order Histroy
 ** My cart page
 ** User Profile 
 ** Product Details 
 ** Catagory Clasification Page
-
-by now 
-virtual payment 
-
