@@ -10,3 +10,5 @@ Just write a note that makes easier to do all the jobs sequentially
 
 ### Product Catagory List 
 >
+
+##### Django Project is initialized only as ShoppingCart
