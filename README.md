@@ -1,7 +1,7 @@
 # Project1 
 
 ## Development Structure 
-We are developing a simple Online Shopping cat web site
+We are developing a simple Online Shopping website
 ### Tools and Framework 
 #### Frontend 
 > simple HTML <br>
