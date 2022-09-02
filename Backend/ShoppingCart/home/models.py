@@ -2,12 +2,17 @@ from django.db import models
 
 
 class Product(models.Model):
-    def __init__(self: _Self, *args, **kwargs) -> None:
+    def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
-        productID = models.CharField(max_length=10)
-        price = models.DecimalField()
-        modelName = models.CharField(max_length=10)
-        catagory = models.CharField(max_length=10)
-        description = models.TextField()
-        image = models.ImageField()
+        self.productID = models.CharField(max_length=10)
+        self.price = models.DecimalField()
+        self.modelName = models.CharField(max_length=10)
+        self.catagory = models.CharField(max_length=10)
+        self.description = models.TextField()
+        self.image = models.ImageField()
         # rating
+
+
+class User (models.Model):
+    def __init__(self, *args, **kwargs) -> None:
+        super().__init__(*args, **kwargs)
