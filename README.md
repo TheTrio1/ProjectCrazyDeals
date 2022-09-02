@@ -17,8 +17,8 @@ A script has been created that is Backend/environment_setup.sh this file creat t
 > Python and bash schould be installed
 
 ```shell 
-git clone https://github.com/USER_NAME/ProjectHospitalManagement.git
-cd ProjectHospitalManagement
+git clone https://github.com/USER_NAME/Project1.git
+cd Project1
 git checkout Backend-home
 bash ./Backend/environment_setup.sh
 ```
@@ -27,6 +27,6 @@ To run Django server in local host the runserver scripts is also available
 
 ```shell 
 
-cd ProjectHospitalManagement
+cd Project1
 bash ./Backend/runserver.sh
 ```
