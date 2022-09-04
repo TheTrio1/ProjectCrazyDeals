@@ -14,7 +14,7 @@ We are developing a simple Online Shopping website
 ## Environment setup and runserver
 A script has been created that is Backend/environment_setup.sh this file creat the django environment for first time 
 > **Prerequisits :**
-> Python and bash schould be installed
+> Python and bash should be installed
 
 ```shell 
 git clone https://github.com/USER_NAME/Project1.git
