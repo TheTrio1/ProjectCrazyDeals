@@ -118,17 +118,88 @@
             border-radius: 31px;
         }
 
-        .productLine1 {
+        .container1 {
+            position: absolute;
+            left: 56px;
+            top: 726px;
             display: flex;
             align-items: center;
-            position: absolute;
-            width: 1468px;
-            height: 375px;
-            border: 2px solid black;
-            left: 31px;
-            top: 726px;
-            border-radius: 31px;
+            justify-content: center;
+            background-color: red;
+        }
 
+        .boxR1 {
+            width: 339px;
+            height: 375px;
+            left: 56px;
+            top: 726px;
+            background-color: #38E9A9;
+            margin: 0.5%;
+            /* background: url(3459.png); */
+            border-radius: 31px;
+        }
+
+        .container2 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 56px;
+            top: 1138px;
+            background-color: black;
+        }
+
+        .boxR2 {
+            width: 687px;
+            height: 387px;
+            left: 56px;
+            top: 1138px;
+            margin: 0.5%;
+            background: #D9D9D9;
+            border-radius: 31px;
+        }
+
+        .container3 {
+            position: absolute;
+            width: 1396px;
+            height: 368px;
+            left: 56px;
+            top: 1562px;
+
+            background: #e65858;
+            border-radius: 31px;
+        }
+
+        .container4 {
+            position: absolute;
+            display: flex;
+            background-color: rgb(174, 129, 216);
+            left: 56px;
+            top: 1956px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .boxR4 {
+            width: 339px;
+            height: 375px;
+            left: 56px;
+            top: 1956px;
+            background-color: white;
+            margin: 0.5%;
+            /* background: url(3459.png); */
+            border-radius: 31px;
+        }
+
+        .container5 {
+            position: absolute;
+            width: 1530px;
+            height: 519px;
+            top: 2329px;
+            left: 56px;
+            margin: 33px 0px;
+
+            background: #3C2C2C;
         }
     </style>
 </head>
@@ -151,15 +222,31 @@
                 <li id="r3"><a href="#">Login</a></li>
             </ul>
         </div>
-        <div class="afterNav"></div>
-        <div class="productLine1">
-            <div id="b1">Box1</div>
-            <div id="b2">Box2</div>
-            <div id="b3">Box3</div>
-            <div id="b4">Box4</div>
-        </div>
+    </header>
+    <div class="afterNav"></div>
+    <div class="container1">
+        <div class="boxR1" id="b1"></div>
+        <div class="boxR1" id="b2"></div>
+        <div class="boxR1" id="b3"></div>
+        <div class="boxR1" id="b4"></div>
+    </div>
 
-    </header> 
+    <div class="container2">
+        <div class="boxR2" id="d1"></div>
+        <div class="boxR2" id="d2"></div>
+    </div>
+
+    <div class="container3"></div>
+
+    <div class="container4">
+        <div class="boxR4" id="f1"></div>
+        <div class="boxR4" id="f2"></div>
+        <div class="boxR4" id="f3"></div>
+        <div class="boxR4" id="f4"></div>
+    </div>
+
+    <div class="container5"></div>
+
 </body>
 
 </html>
