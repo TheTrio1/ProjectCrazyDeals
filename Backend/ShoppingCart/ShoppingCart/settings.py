@@ -51,10 +51,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'ShoppingCart.urls'
 
+template_dir = BASE_DIR.parent.parent/"Frontend"
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [template_dir],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -69,7 +71,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ShoppingCart.wsgi.application'
 
+STATICFILES_DIRS = [
+    template_dir / "static",
 
+]
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
