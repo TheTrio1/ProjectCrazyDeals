@@ -1,7 +1,9 @@
 from django.urls import path, include
-from .views import home
+from .views import home, index, cart
 
 urlpatterns = [
-    path('', home),
+    path('home', home),
+    path('cart', cart),
+    path('', index),
 
 ]

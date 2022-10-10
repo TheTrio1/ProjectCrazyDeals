@@ -1,12 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cart Page</title>
-    <link rel="stylesheet" href="css1.css">
+    <link rel="stylesheet" href="{% static 'css/css1.css' }%">
 </head>
+
 <body>
     <div class="small-container">
         <table>
@@ -19,7 +22,7 @@
                 <td>Product Name</td>
                 <td>
                     <div class="cart-info">
-                        <img src="./img1.jpeg">
+                        <img src="{% static 'images/img1.jpeg' %}">
                         <div>
                             <p>
                                 Printed Tshirt
@@ -37,7 +40,7 @@
                 <td>Product Name</td>
                 <td>
                     <div class="cart-info">
-                        <img src="./img1.jpeg">
+                        <img src="{% static 'image/img1.jpeg' %}">
                         <div>
                             <p>
                                 Printed Tshirt
@@ -55,7 +58,7 @@
                 <td>Product Name</td>
                 <td>
                     <div class="cart-info">
-                        <img src="./img1.jpeg">
+                        <img src="{% static 'images/img1.jpeg' %}">
                         <div>
                             <p>
                                 Printed Tshirt
@@ -91,4 +94,5 @@
 
     </div>
 </body>
+
 </html>
