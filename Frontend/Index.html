@@ -1,0 +1,299 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrazyDeals</title>
+    <link rel="stylesheet" href="{% static 'css/css01.css' %}">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="{% static  'images/NewProjectlogo.png'  %}" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contct</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="" alt="">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h2>Style Yourself with us!</h2>
+                    <p>
+                        "You can have anything you want in life if you dress for it."
+                        - Edith Head
+                    </p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="{% static  'images/Index.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- featured categories -->
+    <div class="categories">
+        <div class="row">
+            <div class="col-3">
+                <img src="{% static  'images/category-4.jpg'  %}">
+            </div>
+            <div class="col-3">
+                <img src="{% static  'images/category-2.jpg'  %}">
+            </div>
+            <div class="col-3">
+                <img src="{% static  'images/category-3.jpg'  %}">
+            </div>
+        </div>
+    </div>
+    <!-- featured products -->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static  'images/product-1.webp' %}">
+                <h4>Men Printed Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$650.00</p>
+            </div>
+            <div class="col-4">
+                <img src="{% static  'images/product-2.jpeg' %}">
+                <h4>men black shoe</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$980.00</p>
+            </div>
+            <div class="col-4">
+                <img src="{% static  'images/product-3.jpg'  %}">
+                <h4>Women kurta set with dupatta</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$1296.00</p>
+            </div>
+            <div class="col-4">
+                <img src="{% static  'images/product-4.jpg'  %}">
+                <h4>women sunglass</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>$750.00</p>
+            </div>
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="{% static  'images/recent-1.jpg'  %}">
+                    <h4>women wrist watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <p>$2200.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static  'images/recent-2.jpg'  %}">
+                    <h4>men yellow tshirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <p>$1850.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static  'images/recent-3.jpeg' %}">
+                    <h4>men wrist watch</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <p>$9850.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static  'images/recent-4.jpg'  %}">
+                    <h4>men socks</h4>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <p>$450.00</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- offer -->
+        <div class="offer">
+            <div class="row">
+                <div class="col-2">
+                    <p>Exclusive only on CrazyDeals</p>
+                    <img src="{% static  'images/exclu-1.webp' %}" class="offer-img">
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- testimonial -->
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <h4>
+                            This is really a reliable platform to choose!
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <img src="{% static  'images/user-1.jpg'  %}">
+                            <h3>Surabhi Mondal</h3>
+                        </h4>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <h4>
+                            This is really a reliable platform to choose!
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <img src="{% static  'images/user-2.jpg'  %}">
+                            <h3>Aritra Ranjan Chowdhury</h3>
+                        </h4>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <h4>
+                            This is really a reliable platform to choose!
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <img src="{% static  'images/user-3.jpg'  %}">
+                            <h3>Bidisha Goswami</h3>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- brands -->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="{% static  'images/brand-1.jpg'  %}">
+                    </div>
+                    <div class="col-5">
+                        <img src="{% static  'images/brand-2.avif' %}">
+                    </div>
+                    <div class="col-5">
+                        <img src="{% static  'images/brand-3.png'  %}">
+                    </div>
+                    <div class="col-5">
+                        <img src="{% static  'images/brand-4.png'  %}">
+                    </div>
+                    <div class="col-5">
+                        <img src="{% static  'images/brand-5.jpg'  %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>
+                            Download our app!
+                        </h3>
+                        <p>
+                            for android phone & pcs also!
+                        </p>
+                        <div class="app-logo">
+                            <img src="">
+                            <img src="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="{% static  'images/NewProjectlogo.png'  %}">
+                        <p>Our purpose is to dress you like a prince & princess!</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>some useful links-</h3>
+                        <ul>
+                            <li>coupons</li>
+                            <li>blog posts</li>
+                            <li>return policies</li>
+                            <li>join affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us on</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
