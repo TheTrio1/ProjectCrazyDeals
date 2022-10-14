@@ -13,3 +13,11 @@ def index(req):
 
 def cart(req):
     return render(req, 'cart1.html')
+
+
+def product(req):
+    return render(req, 'ProductPage.html')
+
+
+def signup(req):
+    return render(req, 'Login_RegPage.html')

@@ -2,3 +2,4 @@ pyenv/
 __pycache__/
 __pypackages__/
 LocalStatic/
+ignore.*
