@@ -5,8 +5,10 @@ Just write a note that makes easier to do all the jobs sequentially
 
 Total page 4
 1. Index page->Index.html
-2. by clicking Explore now,redirect to --> ProductPage.html
-3.by clicking Account,redirect to --> Login_RegPage.html
-4.after login-> Index.html
-5.page to create - Product Details
-5.page to create - user Profile
+2. by clicking Explore now,redirect to --> ProductPage.html --> ProductDetail(For individual)
+3. by clicking Account,redirect to --> Login_RegPage.html
+4. after login-> Index.html
+5. Product Details 
+6. Navbar-cart(not implemented now) --> cart page
+
+7. page to create - user Profile

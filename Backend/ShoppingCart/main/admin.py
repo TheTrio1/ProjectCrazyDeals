@@ -4,7 +4,9 @@ from django.contrib import admin
 from .models import *
 
 
-admin.site.register(Shirt, ShirtAdmin)
+admin.site.register(Customer)
+admin.site.register(Product)
+admin.site.register(Shirt)
 admin.site.register(Pants)
 admin.site.register(WomensWare)
 admin.site.register(MenWare)
