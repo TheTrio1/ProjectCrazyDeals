@@ -51,12 +51,16 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'ShoppingCart.urls'
 
+
 template_dir = BASE_DIR.parent.parent/"Frontend"
+
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+
         'DIRS': [template_dir],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
