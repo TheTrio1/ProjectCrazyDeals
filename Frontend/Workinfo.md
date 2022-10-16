@@ -4,8 +4,9 @@ Just write a note that makes easier to do all the jobs sequentially
 
 
 Total page 4
-1. Index page->Index.html
-2. by clicking Explore now,redirect to --> ProductPage.html --> ProductDetail(For individual)
+1. Index page->Index.html Done
+2. by clicking Explore now,redirect to --> ProductPage.html  Done
+2. ProductPage.html --> ProductDetail(For individual)  To Do 
 3. by clicking Account,redirect to --> Login_RegPage.html
 4. after login-> Index.html
 5. Product Details 

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,51 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details page</title>
-    <link rel="stylesheet" href="productdetails.css">
+    <link rel="stylesheet" href="{% static 'css/product_detail.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar2.css' %}">
+
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="./static/images/New Project logo.png" width="125px">
-            </div>
-            <nav>
-                <ul>
-                    <!-- <button class="btn-SearchBar">Search your product here</button> -->
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Account</a></li>
-                </ul>
-            </nav>
-            <img src="" alt="">
-        </div>
+    <div class="navbar_container">
+        {% include 'NavigationBarContent.html' %}
     </div>
 
     <!-- single product details  -->
 
-    <div class="small-container single-product">
+    <div class="small-container_single-product">
         <div class="row">
             <div class="col-2">
-                <img src="./static/images/gallery-1.jpg" width="50%" id="productImg" >
-                    <div class="small-img-col">
-                        <img src="./static/images/gallery-1.jpg" width="50%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="./static/images/gallery-2.jpg" width="50%" class="small-img>
-                    </div>
-                    <div class="small-img-col">
-                        <img src="./static/images/gallery-3.jpg" width="50%" class="small-img>
-                    </div>
-                    <div class="small-img-col">
-                        <img src="./static/images/gallery-4.jpg" width="50%" class="small-img>
-                    </div>
+                <img src="./static/images/gallery-1.jpg" width="50%" id="productImg">
+                <div class="small-img-col">
+                    <img src="./static/images/gallery-1.jpg" width="50%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="./static/images/gallery-2.jpg" width="50%" class="small-img">
+                </div>
+                <div class=" small-img-col">
+                    <img src="./static/images/gallery-3.jpg" width="50%" class="small-img">
+                </div>
+                <div class=" small-img-col">
+                    <img src="./static/images/gallery-4.jpg" width="50%" class="small-img">
+                </div>
+
             </div>
-            <div class="col-2">
+            <div class=" col-2">
                 <p>Home / T-shirt</p>
                 <h1>Red printed t-shirt by HRX</h1>
                 <h4>$950.00</h4>
@@ -67,22 +57,22 @@
                 <a href="" class="btn"> Add to cart </a>
                 <h3>Product details <i class="fa fa-indent"></i> </h3>
                 <br>
-                <p>Tackle your workout days in style with the HRX Men's Training T-shirt. 
-                The lightweight fabric gives you a wider range of motion while the Rapid-Dry 
-                and Anti Microbial 
-                technology treated fabric works on minimizing sweat and body odour .</p>
+                <p>Tackle your workout days in style with the HRX Men's Training T-shirt.
+                    The lightweight fabric gives you a wider range of motion while the Rapid-Dry
+                    and Anti Microbial
+                    technology treated fabric works on minimizing sweat and body odour .</p>
             </div>
-            
+
         </div>
     </div>
 
-<!-- title  -->
-         <div class="small-container">
-             <div class="row row-2">
-                <h2>Related Products</h2>
-                <p>view more</p>
-             </div>
-         </div>
+    <!-- title  -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>view more</p>
+        </div>
+    </div>
 
     <!-- ----------Footer---------- -->
     <div class="footer">

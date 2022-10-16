@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All product page</title>
-    <link rel="stylesheet" href="LocalStatic/HomePage.css">
+    <link rel="stylesheet" href="{% static 'css/HomePage.css' %}">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
 </head>
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="./NewProjectlogo.png" width="125px">
+                <img src="{% static './NewProjectlogo.png' %}" width="125px">
             </div>
             <nav>
                 <ul>
@@ -28,7 +28,7 @@
                     <li><a href="">Account</a></li>
                 </ul>
             </nav>
-            <img src="" alt="">
+            <img src="{% static '' %}" alt="">
         </div>
     </div>
 
@@ -50,7 +50,7 @@
         <!-- <h2 class="title">Featured Products</h2> -->
         <div class="row">
             <div class="col-4">
-                <img src="images/gallery-1.jpg">
+                <img src="{% static 'images/gallery-1.jpg' %}">
                 <h4>Men Printed Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -62,7 +62,7 @@
                 <p>$650.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-3.jpg">
+                <img src="{% static 'images/product-3.jpg' %}">
                 <h4>men black shoe</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -74,7 +74,7 @@
                 <p>$980.00</p>
             </div>
             <div class="col-4">
-                <img src="images/maleShirt1.jfif">
+                <img src="{% static 'images/maleShirt1.jfif' %}">
                 <h4>Women kurta set with dupatta</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -86,7 +86,7 @@
                 <p>$1296.00</p>
             </div>
             <div class="col-4">
-                <img src="images/category-1.jpg">
+                <img src="{% static 'images/category-1.jpg' %}">
                 <h4>women sunglass</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -100,7 +100,7 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <img src="images/saree1.jfif">
+                <img src="{% static 'images/saree1.jfif' %}">
                 <h4>Men Printed Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -112,7 +112,7 @@
                 <p>$650.00</p>
             </div>
             <div class="col-4">
-                <img src="images/dress1.jfif">
+                <img src="{% static 'images/dress1.jfif' %}">
                 <h4>men black shoe</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -124,7 +124,7 @@
                 <p>$980.00</p>
             </div>
             <div class="col-4">
-                <img src="images/jeans1.jfif">
+                <img src="{% static 'images/jeans1.jfif' %}">
                 <h4>Women kurta set with dupatta</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -136,7 +136,7 @@
                 <p>$1296.00</p>
             </div>
             <div class="col-4">
-                <img src="images/top1.jfif">
+                <img src="{% static 'images/top1.jfif' %}">
                 <h4>women sunglass</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -151,7 +151,7 @@
         <!-- <h2 class="title">Latest Products</h2> -->
         <div class="row">
             <div class="col-4">
-                <img src="images/necklace1.jfif">
+                <img src="{% static 'images/necklace1.jfif' %}">
                 <h4>women wrist watch</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -163,7 +163,7 @@
                 <p>$2200.00</p>
             </div>
             <div class="col-4">
-                <img src="images/product-9.jpg">
+                <img src="{% static 'images/product-9.jpg' %}">
                 <h4>men yellow tshirt</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -175,7 +175,7 @@
                 <p>$1850.00</p>
             </div>
             <div class="col-4">
-                <img src="images/wristwatch2.jpg">
+                <img src="{% static 'images/wristwatch2.jpg' %}">
                 <h4>men wrist watch</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -187,7 +187,7 @@
                 <p>$9850.00</p>
             </div>
             <div class="col-4">
-                <img src="images/sunglass2.jpg">
+                <img src="{% static 'images/sunglass2.jpg' %}">
                 <h4>men socks</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -225,12 +225,12 @@
                         for android phone & pcs also!
                     </p>
                     <div class="app-logo">
-                        <img src="">
-                        <img src="">
+                        <img src="{% static '' %}">
+                        <img src="{% static '' %}">
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="./New Project logo.png">
+                    <img src="{% static './NewProjectlogo.png' %}">
                     <p>Our purpose is to dress you like a prince & princess!</p>
                 </div>
                 <div class="footer-col-3">

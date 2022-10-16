@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and Registration Page of Shopping Cart Website</title>
-    <link rel="stylesheet" href="LocalStatic/HomePage.css">
+    <link rel="stylesheet" href="{% static 'css/HomePage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login_regidter_error_message.css' %}">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
 
@@ -16,31 +19,22 @@
 
     <!----------------- Account Page ------------------->
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="./New Project logo.png" width="125px">
-            </div>
-            <nav>
-                <ul>
-                    <!-- <button class="btn-SearchBar">Search your product here</button> -->
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Account</a></li>
-                </ul>
-            </nav>
-            <img src="" alt="">
-        </div>
+        {% include 'NavigationBarContent.html' %}
     </div>
 
     <div class="container">
         <div class="account-page">
             <div class="row">
                 <div class="col-21">
-                    <img src="images/image1.png" width="100%">
+                    <img src="{% static 'images/image1.png' %}" width="100%">
                 </div>
-
+                {% if loggedin %}
+                <div class="logout_btn">
+                    <a href="logout">Logout</a>
+                </div>
+                {% else %}
                 <div class="col-21">
+
                     <div class="form-container">
                         <div class="form-btn">
                             <span onclick="login()">Login</span>
@@ -48,21 +42,37 @@
                             <hr id="Indicator">
                         </div>
 
-                        <form id="LoginForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
+                        <form id="LoginForm" method="post">
+                            {% csrf_token %}
+                            <!-- showing Erroe Message section -->
+                            {% if message.failed == True %}
+                            <div class="ErroeMessage">
+                                {{ message.reason }}
+                            </div>
+                            {% endif %}
+                            <input type="text" placeholder="Username" name="username" required>
+                            <input type="password" placeholder="Password" name="password" required>
                             <button type="submit" class="btn">Login</button>
                             <a href="">Forgot password</a>
                         </form>
 
-                        <form id="RegForm">
-                            <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
+                        <form id="RegForm" method="post">
+                            {% csrf_token %}
+                            <!-- showing Erroe Message section -->
+                            {% if message.failed == True %}
+                            <div class="ErroeMessage">
+                                {{ message.reason }}
+                            </div>
+                            {% endif %}
+                            <input type="text" placeholder="Username" name="username" required>
+                            <input type="email" placeholder="Email" name="email" required>
+                            <input type="password" placeholder="Password" name="psswd1" required>
+                            <input type="password" placeholder=" Password" name="psswd2" required>
                             <button type="submit" class="btn">Register</button>
                         </form>
                     </div>
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>
