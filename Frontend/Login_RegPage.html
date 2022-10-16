@@ -35,21 +35,24 @@
                 {% else %}
                 <div class="col-21">
 
+
                     <div class="form-container">
+
                         <div class="form-btn">
                             <span onclick="login()">Login</span>
                             <span onclick="register()">Register</span>
                             <hr id="Indicator">
                         </div>
-
+                        <!-- showing Erroe Message section -->
+                        {% if message.failed == True %}
+                        <div class="ErroeMessage">
+                            {{ message.reason }}
+                        </div>
+                        {% endif %}
+                        <!-- end of error message -->
                         <form id="LoginForm" method="post">
                             {% csrf_token %}
-                            <!-- showing Erroe Message section -->
-                            {% if message.failed == True %}
-                            <div class="ErroeMessage">
-                                {{ message.reason }}
-                            </div>
-                            {% endif %}
+
                             <input type="text" placeholder="Username" name="username" required>
                             <input type="password" placeholder="Password" name="password" required>
                             <button type="submit" class="btn">Login</button>
@@ -59,11 +62,7 @@
                         <form id="RegForm" method="post">
                             {% csrf_token %}
                             <!-- showing Erroe Message section -->
-                            {% if message.failed == True %}
-                            <div class="ErroeMessage">
-                                {{ message.reason }}
-                            </div>
-                            {% endif %}
+
                             <input type="text" placeholder="Username" name="username" required>
                             <input type="email" placeholder="Email" name="email" required>
                             <input type="password" placeholder="Password" name="psswd1" required>
