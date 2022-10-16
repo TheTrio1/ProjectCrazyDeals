@@ -1,8 +1,9 @@
-from django.urls import path, include
-from .views import home, index, cart
+from django.urls import path
+from .views import index, cart, product, signup
 
 urlpatterns = [
-    path('home', home),
+    path('signup', signup),
+    path('product', product),
     path('cart', cart),
     path('', index),
 
